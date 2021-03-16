@@ -102,8 +102,7 @@ fi
 ### User-defined and Runtime
 ##############################################################################
 
-#RSCRIPT="launch_download_downscale.R"
-PYSCRIPT="QueuedDownloader.py"
+SCRIPT="QueuedDownloader.py"
 CONTAINER_NAME=${1}
 GIT_REMOTE_USERNAME=$(yq r ${DIRECTORY_CONTAINER_SHARED}/${CONTAINER_NAME}/${CONFIG_FILE} git.remote.user-name)
 GIT_REMOTE_USEREMAIL=$(yq r ${DIRECTORY_CONTAINER_SHARED}/${CONTAINER_NAME}/${CONFIG_FILE} git.remote.user-email)
