@@ -163,7 +163,7 @@ do
     # Check if file is completed.
     while IFS= read -r line
     do
-      if [ $line = "lon, [1]" ];then
+      if [ "$line" = "lon, [1]" ];then
         COMPLETED_CHECK=true
       fi
     done < "$FILE"
